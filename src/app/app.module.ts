@@ -9,7 +9,12 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 
-import { MatToolbarModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -24,7 +29,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserModule, BrowserAnimationsModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    MatToolbarModule
+    MatToolbarModule, MatCardModule, MatGridListModule, MatButtonModule, MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
