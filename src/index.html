@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Garciaericn</title>
-  <base href="/">
   <meta name="theme-color" content="#f44336" />
+
+  <title>Garciaericn</title>
+
+  <base href="/">
+
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <!-- update the version number as needed -->
+  <!-- Firebase - update the version number as needed -->
   <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
   <!-- <script defer src="/__/firebase/4.8.1/firebase-auth.js"></script> -->
@@ -42,8 +46,10 @@
     <p id="load">Firebase SDK Loading&hellip;</p>
   </app-root>
 
+  <div id="debug-div"></div>
 
   <script>
+    // TODO: Remove this script tag and use firebase feature in individual components.
     document.addEventListener('DOMContentLoaded', function() {
       // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
       // // The Firebase SDK is initialized and available here!
@@ -58,10 +64,11 @@
       try {
         let app = firebase.app();
         let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        document.getElementById('debug-div').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        console.log('Firebase is loaded and working!!')
       } catch (e) {
         console.error(e);
-        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        document.getElementById('debug-div').innerHTML = 'Error loading the Firebase SDK, check the console.';
       }
     });
   </script>
