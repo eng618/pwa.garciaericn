@@ -1,0 +1,25 @@
+.eng-header {
+  position: fixed;
+}
+
+.drawer {
+  position: fixed;
+}
+
+.drawer-card {
+  height: 100vh;
+}
+
+.vertical-menu-item {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  max-width: 260px;
+  overflow-wrap: break-word;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  text-align: left;
+  width: 93%;
+  word-wrap: break-word;
+}

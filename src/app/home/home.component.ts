@@ -10,7 +10,7 @@ import { AppComponent } from '../app.component';
 export class HomeComponent implements OnInit {
 
   title = 'Eric N. Garcia';
-  slogan = "Welcome to my professional portfolio!"
+  slogan = 'Welcome to my professional portfolio!';
 
   constructor() { }
 

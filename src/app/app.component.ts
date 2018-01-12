@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Eric N. Garcia';
+
+  toggleMenu() {
+    console.log('Menu toggled');
+  }
+
+  constructor() { }
+
 }
