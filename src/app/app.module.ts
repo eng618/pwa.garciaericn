@@ -10,9 +10,10 @@ import { environment } from '../environments/environment';
 // Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { DetailedCardComponent } from './detailed-card/detailed-card.component';
 
 // Services
-import { LyndaCoursesService } from './lynda-courses.service';
+import { LyndaCourseService } from './lynda-course.service';
 
 // Angular Material
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -21,7 +22,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { CardGridComponent } from './card-grid/card-grid.component';
 
 
 const routes: Routes = [
@@ -32,7 +32,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    CardGridComponent
+    DetailedCardComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
@@ -40,7 +40,7 @@ const routes: Routes = [
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     MatToolbarModule, MatCardModule, MatGridListModule, MatButtonModule, MatIconModule, MatSidenavModule
   ],
-  providers: [LyndaCoursesService],
+  providers: [LyndaCourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

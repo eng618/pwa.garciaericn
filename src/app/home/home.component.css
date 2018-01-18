@@ -30,12 +30,6 @@ img {
   text-shadow: 0 0 3px #000000;
 }
 
-.home-card{
-  display: inline-block;
-  width: 25%;
-  margin: 15px;
-}
-
-mat-card-actions {
-  text-align: right;
+.grid {
+  height: 500px;
 }

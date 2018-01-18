@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import { AppComponent } from '../app.component';
 
+import { Course } from '../shared/course';
+import { LyndaCourseService } from '../lynda-course.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,10 +14,20 @@ export class HomeComponent implements OnInit {
 
   title = 'Eric N. Garcia';
   slogan = 'Welcome to my professional portfolio!';
+  courses: Course[];
 
-  constructor() { }
+  constructor(private lyndaCourseService: LyndaCourseService) { }
 
   ngOnInit() {
+    this.getCourses();
+  }
+
+  getCourses(): void {
+    this.lyndaCourseService.getCourses()
+      .subscribe(courses => {
+        this.courses = courses
+        console.log(courses);
+      });
   }
 
 }
