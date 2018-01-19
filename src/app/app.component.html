@@ -1,22 +1,22 @@
 <mat-drawer-container>
 
-  <mat-drawer #drawer class="drawer" mode="over" (keydown.escape)="drawer.close()">
+  <mat-drawer #drawer class='drawer' mode='over' (keydown.escape)='drawer.close()'>
     <!-- Drawer content -->
     <mat-card class='drawer-card'>
       <mat-card-title>Eric Garcia</mat-card-title>
       <mat-card-actions>
         <!-- TODO: Route buttons -->
-        <button mat-button color='accent' class="vertical-menu-item">Portfolio</button>
-        <button mat-button color='accent' class="vertical-menu-item">Blog</button>
-        <button mat-button color='accent' class="vertical-menu-item">About</button>
-        <button mat-button color='accent' class="vertical-menu-item">Contact</button>
+        <button mat-button color='accent' class='vertical-menu-item'>Portfolio</button>
+        <button mat-button color='accent' class='vertical-menu-item'>Blog</button>
+        <button mat-button color='accent' class='vertical-menu-item'>About</button>
+        <button mat-button color='accent' class='vertical-menu-item'>Contact</button>
       </mat-card-actions>
     </mat-card>
   </mat-drawer>
 
   <mat-drawer-content>
     <!-- Main Content -->
-    <mat-toolbar class="eng-header" color='primary'>
+    <mat-toolbar class='eng-header' color='primary'>
       <button mat-button color='white' (click)='drawer.toggle()'><mat-icon>menu</mat-icon></button>
       <h1>Eric N. Garcia</h1>
     </mat-toolbar>

@@ -9,7 +9,7 @@ import { Course } from '../shared/course';
 @Component({
   selector: 'eng-detailed-card',
   templateUrl: './detailed-card.component.html',
-  styleUrls: ['./detailed-card.component.css']
+  styleUrls: ['./detailed-card.component.scss']
 })
 export class DetailedCardComponent implements OnInit {
 

@@ -1,3 +1,4 @@
+$gutterSize: 15px;
 
 img {
   max-width: 100%;
@@ -6,12 +7,12 @@ img {
 .eng-site-header {
   position: center, center;
   background-color: #f3f3f3;
-  background: url('/assets/images/site-header.jpeg') no-repeat center center fixed;
+  background: url("/assets/images/site-header.jpeg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 90vh;
+  height: 100vh;
 }
 
 .eng-slogan {
@@ -30,6 +31,19 @@ img {
   text-shadow: 0 0 3px #000000;
 }
 
-.grid {
-  height: 500px;
+.eng-expand_arrow {
+  color: white;
+}
+
+.eng-fxlayout {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.eng-fx {
+
+}
+
+.eng-card {
+  margin: 0 0.5rem 1rem;
 }
