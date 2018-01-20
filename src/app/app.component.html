@@ -6,10 +6,10 @@
       <mat-card-title>Eric Garcia</mat-card-title>
       <mat-card-actions>
         <!-- TODO: Route buttons -->
-        <button mat-button color='accent' class='vertical-menu-item'>Portfolio</button>
-        <button mat-button color='accent' class='vertical-menu-item'>Blog</button>
-        <button mat-button color='accent' class='vertical-menu-item'>About</button>
-        <button mat-button color='accent' class='vertical-menu-item'>Contact</button>
+        <button mat-button color='accent' class='vertical-menu-item' (click)='navigateTo("portfolio")'>Portfolio</button>
+        <button mat-button color='accent' class='vertical-menu-item' (click)='navigateTo("blog")'>Blog</button>
+        <button mat-button color='accent' class='vertical-menu-item' (click)='navigateTo("about")'>About</button>
+        <button mat-button color='accent' class='vertical-menu-item' (click)='navigateTo("contact")'>Contact</button>
       </mat-card-actions>
     </mat-card>
   </mat-drawer>
