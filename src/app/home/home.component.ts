@@ -33,4 +33,9 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  viewHighlight(highlight: Highlight) {
+    // TODO: rout to the url
+    console.log(`Need to launch ${highlight.url}`);
+  }
+
 }
