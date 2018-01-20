@@ -10,7 +10,8 @@ import { Highlights } from '../shared/mock-highlight';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  providers: [ LyndaCourseService ]
 })
 export class HomeComponent implements OnInit {
 
@@ -34,7 +35,7 @@ export class HomeComponent implements OnInit {
   }
 
   viewHighlight(highlight: Highlight) {
-    // TODO: rout to the url
+    // TODO: route to the url
     console.log(`Need to launch ${highlight.url}`);
   }
 

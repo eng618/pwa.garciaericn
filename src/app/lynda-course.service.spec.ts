@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { LyndaCoursesService } from './lynda-courses.service';
+import { LyndaCourseService } from './lynda-course.service';
 
-describe('LyndaCoursesService', () => {
+describe('LyndaCourseService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [LyndaCoursesService]
+      providers: [LyndaCourseService]
     });
   });
 
-  it('should be created', inject([LyndaCoursesService], (service: LyndaCoursesService) => {
+  it('should be created', inject([LyndaCourseService], (service: LyndaCourseService) => {
     expect(service).toBeTruthy();
   }));
 });
