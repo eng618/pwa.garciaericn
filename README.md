@@ -1,5 +1,7 @@
 # Garciaericn
 
+[![Build Status](https://travis-ci.org/ENG618/pwa.garciaericn.svg?branch=master)](https://travis-ci.org/ENG618/pwa.garciaericn)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
 ## Development server
