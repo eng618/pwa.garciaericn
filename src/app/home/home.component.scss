@@ -1,9 +1,3 @@
-$gutterSize: 15px;
-
-img {
-  max-width: 100%;
-}
-
 .eng-site-header {
   background-color: #f3f3f3;
   background: url("/assets/images/site-header/site-header_w_1400.jpg") no-repeat center center fixed;
@@ -41,4 +35,5 @@ img {
 
 .eng-card {
   margin: 0 0.5rem 1rem;
+  background-size: cover;
 }
