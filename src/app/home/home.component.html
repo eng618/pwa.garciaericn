@@ -13,19 +13,8 @@
   <div class="eng-fxlayout" fxLayout='row' fxLayoutAlign="space-evently center" fxLayoutWrap>
     <div class='eng-fx' fxFlex.gt-md='25' fxFlex.gt-sm='33.333' fxFlex.gt-xs='50' fxFlex.xs='100' *ngFor="let highlight of highlights">
 
-      <mat-card class="eng-card">
-        <img mat-card-image class="article-image" src="{{ highlight.imageUrl }}" border="0" alt="article image" />
-        <mat-card-title>{{ highlight.title }}</mat-card-title>
+      <eng-detailed-card [card]=highlight></eng-detailed-card>
 
-        <mat-card-content>
-          {{ highlight.summary }}
-        </mat-card-content>
-
-        <mat-card-actions>
-          <!-- TODO: Link button to app page -->
-          <button mat-button color='accent' (click)='viewHighlight(highlight)'>Read more <mat-icon>chevron_right</mat-icon></button>
-        </mat-card-actions>
-      </mat-card>
     </div>
   </div>
 </div>

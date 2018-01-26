@@ -1,7 +1,7 @@
-import { Highlight } from './highlight';
+import { Card } from './card';
 
 
-export const Highlights: Highlight[] = [
+export const Cards: Card[] = [
   {
     title: 'Memory Vault',
     imageUrl: '/assets/images/mdl/example-work08.jpg',

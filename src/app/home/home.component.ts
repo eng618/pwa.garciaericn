@@ -4,21 +4,21 @@ import { AppComponent } from '../app.component';
 
 import { Course } from '../shared/course';
 import { LyndaCourseService } from '../lynda-course.service';
-import { Highlight } from '../shared/highlight';
-import { Highlights } from '../shared/mock-highlight';
+import { Card } from '../shared/card';
+import { Cards } from '../shared/mock-highlight';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  providers: [ LyndaCourseService ]
+  providers: [LyndaCourseService]
 })
 export class HomeComponent implements OnInit {
 
   title = 'Eric N. Garcia';
   slogan = 'Welcome to my professional portfolio!';
   courses: Course[];
-  highlights: Highlight[] = Highlights;
+  highlights: Card[] = Cards;
 
   constructor(private lyndaCourseService: LyndaCourseService) { }
 
@@ -32,11 +32,6 @@ export class HomeComponent implements OnInit {
         this.courses = courses
         console.log(courses);
       });
-  }
-
-  viewHighlight(highlight: Highlight) {
-    // TODO: route to the url
-    console.log(`Need to launch ${highlight.url}`);
   }
 
 }
