@@ -20,7 +20,9 @@ export class HomeComponent implements OnInit {
   courses: Course[];
   highlights: Card[] = Cards;
 
-  constructor(private lyndaCourseService: LyndaCourseService) { }
+  constructor(private lyndaCourseService: LyndaCourseService) {
+    console.log(this.highlights.length);
+  }
 
   ngOnInit() {
     this.getCourses();

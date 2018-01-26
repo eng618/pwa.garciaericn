@@ -1,13 +1,12 @@
 <div class='eng-site-header'>
   <div class='eng-slogan'>{{ title }}</div>
   <div class='eng-sub-slogan'>{{ slogan }}</div>
-  <div class='eng-scroll-icon'></div>
+  <div class='eng-scroll-icon' *ngIf="highlights.length > 0"></div>
 </div>
 
-<!-- Add this block per item in portfolio -->
-<!-- TODO: Create ngFor items in portfolio -->
+<!-- TODO: Change to highlight items / portfolio items -->
 
-<div class='eng-wrapper'>
+<div class='eng-wrapper' *ngIf="highlights.length > 0">
 
   <h2>Highlights</h2>
   <div class="eng-fxlayout" fxLayout='row' fxLayoutAlign="space-evently center" fxLayoutWrap>
