@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { MarkdownModule } from 'ngx-markdown';
 import { environment } from '../environments/environment';
 
 // Components
@@ -36,7 +37,7 @@ const routes: Routes = [
     DetailedCardComponent
   ],
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes), MarkdownModule.forRoot(),
     BrowserModule, BrowserAnimationsModule, FlexLayoutModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     MatToolbarModule, MatCardModule, MatGridListModule, MatButtonModule, MatIconModule, MatSidenavModule
