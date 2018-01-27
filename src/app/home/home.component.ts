@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 import { AppComponent } from '../app.component';
 
@@ -20,7 +21,7 @@ export class HomeComponent implements OnInit {
   courses: Course[];
   highlights: Card[] = Cards;
 
-  constructor(private lyndaCourseService: LyndaCourseService) {
+  constructor(private lyndaCourseService: LyndaCourseService, db: AngularFireDatabase) {
     console.log(this.highlights.length);
   }
 

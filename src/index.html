@@ -14,16 +14,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <!-- Firebase - update the version number as needed -->
-  <!-- <script defer src="/__/firebase/4.8.1/firebase-app.js"></script> -->
-  <!-- include only the Firebase features as you need -->
-  <!-- <script defer src="/__/firebase/4.8.1/firebase-auth.js"></script> -->
-  <!-- <script defer src="/__/firebase/4.8.1/firebase-database.js"></script> -->
-  <!-- <script defer src="/__/firebase/4.8.1/firebase-messaging.js"></script> -->
-  <!-- <script defer src="/__/firebase/4.8.1/firebase-storage.js"></script> -->
-  <!-- initialize the SDK after all desired features are loaded -->
-  <!-- <script defer src="/__/firebase/init.js"></script> -->
-
   <!-- Add to home screen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -48,33 +38,6 @@
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p>
   </app-root>
-
-  <div id="debug-div"></div>
-
-  <script>
-    // TODO: Remove this script tag and use firebase feature in individual components.
-    document.addEventListener('DOMContentLoaded', function() {
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-      // // The Firebase SDK is initialized and available here!
-      //
-      // firebase.auth().onAuthStateChanged(user => { });
-      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-      // firebase.messaging().requestPermission().then(() => { });
-      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-      //
-      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-      // try {
-      //   let app = firebase.app();
-      //   let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-      //   document.getElementById('debug-div').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-      //   console.log('Firebase is loaded and working!!')
-      // } catch (e) {
-      //   console.error(e);
-      //   document.getElementById('debug-div').innerHTML = 'Error loading the Firebase SDK, check the console.';
-      // }
-    });
-  </script>
 </body>
 
 </html>
