@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Course } from '../shared/course';
+import { Card } from '../shared/card';
 
 /**
-* @param course: Course;
+* @param card: Card;
 *
 */
 
@@ -13,11 +13,15 @@ import { Course } from '../shared/course';
 })
 export class DetailedCardComponent implements OnInit {
 
-  @Input() course: Course;
+  @Input() card: Card;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  navigatTo(cardUrl: String) {
+    console.log(`Navigating to ${cardUrl}`)
   }
 
 }
