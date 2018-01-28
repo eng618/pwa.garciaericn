@@ -2,39 +2,28 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 
 import { AppComponent } from '../app.component';
+import { Observable } from 'rxjs/Observable';
 
-import { Course } from '../shared/course';
-import { LyndaCourseService } from '../lynda-course.service';
 import { Card } from '../shared/card';
-import { Cards } from '../shared/mock-highlight';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  providers: [LyndaCourseService]
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
   title = 'Eric N. Garcia';
   slogan = 'Welcome to my professional portfolio!';
-  courses: Course[];
-  highlights: Card[] = Cards;
 
-  constructor(private lyndaCourseService: LyndaCourseService, db: AngularFireDatabase) {
-    console.log(this.highlights.length);
+  highlights: Observable<any[]>;
+
+
+  constructor(db: AngularFireDatabase) {
+    this.highlights = db.list('highlights').valueChanges();
   }
 
   ngOnInit() {
-    this.getCourses();
-  }
-
-  getCourses(): void {
-    this.lyndaCourseService.getCourses()
-      .subscribe(courses => {
-        this.courses = courses
-        console.log(courses);
-      });
   }
 
 }

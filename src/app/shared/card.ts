@@ -11,7 +11,7 @@ export class Card {
     title: string = '',
     summary: string = '',
     imageUrl: string = '/assets/images/mdl/example-work08.jpg',
-    url: string = ''
+    url: string = '#'
   ) {
 
   }

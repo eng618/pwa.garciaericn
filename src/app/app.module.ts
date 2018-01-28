@@ -26,9 +26,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DetailedCardComponent } from './detailed-card/detailed-card.component';
 
-// Services
-import { LyndaCourseService } from './lynda-course.service';
-
 
 const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -47,7 +44,6 @@ const routes: Routes = [
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     MatToolbarModule, MatCardModule, MatGridListModule, MatButtonModule, MatIconModule, MatSidenavModule
   ],
-  providers: [LyndaCourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
