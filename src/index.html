@@ -24,20 +24,51 @@
   <meta name="msapplication-TileImage" content="icons/icon-144x144.png">
   <meta name="msapplication-TileColor" content="#f44336">
 
+  <!-- Styles for when js is disabled -->
+  <style>
+    .eng-no-js {
+      transform: translate(-50%, -50%);
+      position: absolute;
+      height: 50%;
+      width: 50%;
+      top: 50%;
+      left: 50%;
+      overflow: auto;
+      text-align: center;
+    }
+
+    @keyframes spinner {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .spinner:before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      margin-left: -15px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      border-top-color: #f44336;
+      animation: spinner .6s linear infinite;
+    }
+  </style>
+
 </head>
 
 <body>
   <app-root>
-    <!-- TODO: Replace with first paint data -->
-    <!-- Baseic info and log -->
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-  </app-root>
+    <!-- Baseic info -->
+    <div class="eng-no-js">
+      <img src="icons/icon-96x96.png" srcset="icons/icon-144x144.png 3x, icons/icon-192x192.png 4x" alt="App Icon" width="48" height="48">
+      <h1>Eric N. Garcia</h1>
+      <h2>Welcome to my professional portfolio!</h2>
+      <div class="spinner"></div>
+    </div </app-root>
 </body>
 
 </html>
