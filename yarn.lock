@@ -271,6 +271,10 @@
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.6.tgz#a4b81ca8cdeb1acbc7923289a4a514f61b59db86"
 
+"@ibm/type@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@ibm/type/-/type-0.5.3.tgz#aee7a25e85ba9887b7a6870ec86054f6118a9181"
+
 "@ngtools/json-schema@1.1.0", "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
