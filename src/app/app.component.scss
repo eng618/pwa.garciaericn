@@ -1,13 +1,14 @@
-mat-toolbar{
+mat-toolbar {
   z-index: 2;
 }
 
-.eng-header {
-  position: fixed;
-}
+// .eng-header {
+//   position: fixed;
+// }
 
 .drawer {
   position: fixed;
+  overflow: hidden;
 }
 
 .drawer-card {
