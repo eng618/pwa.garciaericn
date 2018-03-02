@@ -26,6 +26,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DetailedCardComponent } from './detailed-card/detailed-card.component';
 import { AboutComponent } from './about/about.component';
+import { PageComponent } from './page/page.component';
 
 
 const routes: Routes = [
@@ -38,7 +39,8 @@ const routes: Routes = [
     AppComponent,
     HomeComponent,
     DetailedCardComponent,
-    AboutComponent
+    AboutComponent,
+    PageComponent
   ],
   imports: [
     RouterModule.forRoot(routes), MarkdownModule.forRoot(),
