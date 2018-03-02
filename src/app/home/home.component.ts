@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 import { Card } from '../shared/card';
 
 @Component({
-  selector: 'app-home',
+  selector: 'eng-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
