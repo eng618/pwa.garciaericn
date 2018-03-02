@@ -1,3 +1,5 @@
+@import '~@angular/material/theming';
+
 mat-toolbar {
   z-index: 2;
 }
@@ -27,4 +29,11 @@ mat-toolbar {
   text-align: left;
   width: 93%;
   word-wrap: break-word;
+}
+
+.eng-nav-link {
+  // font-weight: 400;
+  padding: 0 5px;
+  text-decoration: none;
+  color: white;
 }

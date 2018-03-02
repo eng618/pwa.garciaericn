@@ -17,8 +17,17 @@
   <mat-drawer-content>
     <!-- Main Content -->
     <mat-toolbar class='eng-header' color='primary'>
-      <button mat-button color='white' (click)='drawer.toggle()'><mat-icon>menu</mat-icon></button>
-      <h1 [routerLink]="['/']">{{ title }}</h1>
+      <mat-toolbar-row>
+        <button mat-button color='white' (click)='drawer.toggle()'><mat-icon>menu</mat-icon></button>
+        <h1 [routerLink]="['/']">{{ title }}</h1>
+        <span class="eng-spacer"></span>
+        <nav>
+          <a class="eng-nav-link" [routerLink]="['/']">Portfolio</a>
+          <a class="eng-nav-link" [routerLink]="['/']">Blog</a>
+          <a class="eng-nav-link" [routerLink]="['/about']">About</a>
+          <a class="eng-nav-link" [routerLink]="['/']">Contact</a>
+        </nav>
+      </mat-toolbar-row>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
