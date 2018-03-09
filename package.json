@@ -2,6 +2,12 @@
   "name": "garciaericn",
   "version": "0.0.0",
   "license": "MIT",
+  "author": "Eric N. Garcia",
+  "description": "This is a progressive web app (PWA) that is writen in Angular.  It serves as my personal portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ENG618/pwa.garciaericn"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
