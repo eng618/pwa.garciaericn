@@ -21,7 +21,7 @@ export class DetailedCardComponent implements OnInit {
   }
 
   navigatTo(cardUrl: String) {
-    console.log(`Navigating to ${cardUrl}`)
+    console.log(`Navigating to ${cardUrl}`);
   }
 
 }

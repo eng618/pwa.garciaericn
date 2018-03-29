@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Roboto');
 
 body {
   margin: 0;
+  font-family: 'ibm-plex-sans', 'Roboto', sans-serif;
 }
 
 .eng-wrapper {
@@ -20,4 +22,8 @@ body {
 .eng-card {
   margin: 0 0.5rem 1rem;
   background-size: cover;
+}
+
+.eng-spacer {
+  flex: 1 1 auto;
 }
