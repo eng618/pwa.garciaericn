@@ -25,17 +25,22 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DetailedCardComponent } from './detailed-card/detailed-card.component';
+import { AboutComponent } from './about/about.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DetailedCardComponent
+    DetailedCardComponent,
+    AboutComponent,
+    PageHeaderComponent
   ],
   imports: [
     RouterModule.forRoot(routes), MarkdownModule.forRoot(),

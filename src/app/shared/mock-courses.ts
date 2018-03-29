@@ -48,4 +48,4 @@ export const Courses: Course[] = [
     length: 'long',
     url: '#'
   }
-]
+];

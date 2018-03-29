@@ -1,13 +1,21 @@
-mat-toolbar{
+@import '~@angular/material/theming';
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+mat-toolbar {
   z-index: 2;
 }
 
-.eng-header {
-  position: fixed;
-}
+// .eng-header {
+//   position: fixed;
+// }
 
 .drawer {
   position: fixed;
+  overflow: hidden;
 }
 
 .drawer-card {
@@ -26,4 +34,12 @@ mat-toolbar{
   text-align: left;
   width: 93%;
   word-wrap: break-word;
+}
+
+.eng-nav-link {
+  // font-weight: 400;
+  padding: 0 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
 }
