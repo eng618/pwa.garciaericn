@@ -28,12 +28,16 @@ import { DetailedCardComponent } from './detailed-card/detailed-card.component';
 import { AboutComponent } from './about/about.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { ContactComponent } from './contact/contact.component';
+import { BlogComponent } from './blog/blog.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'blog', component: BlogComponent},
+  { path: 'contact', component: ContactComponent },
+  { path: 'portfolio', component: PortfolioComponent}
 ];
 
 @NgModule({
@@ -43,7 +47,9 @@ const routes: Routes = [
     DetailedCardComponent,
     AboutComponent,
     PageHeaderComponent,
-    ContactComponent
+    ContactComponent,
+    BlogComponent,
+    PortfolioComponent
   ],
   imports: [
     RouterModule.forRoot(routes), MarkdownModule.forRoot(),
