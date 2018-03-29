@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "garciaericn-ff941"
+    "default": "garciaericn-prod",
+    "dev": "garciaericn-dev"
   }
 }
