@@ -6,8 +6,8 @@
       <mat-card-title [routerLink]="['/']">Eric Garcia</mat-card-title>
       <mat-card-actions>
         <!-- TODO: Route buttons -->
-        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()'>Portfolio</button>
-        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()'>Blog</button>
+        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/portfolio']">Portfolio</button>
+        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/blog']">Blog</button>
         <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/about']">About</button>
         <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/contact']">Contact</button>
       </mat-card-actions>
@@ -25,8 +25,8 @@
       <mat-toolbar-row>
         <span class="eng-spacer"></span>
         <nav>
-          <a class="eng-nav-link" [routerLink]="['/']">Portfolio</a>
-          <a class="eng-nav-link" [routerLink]="['/']">Blog</a>
+          <a class="eng-nav-link" [routerLink]="['/portfolio']">Portfolio</a>
+          <a class="eng-nav-link" [routerLink]="['/blog']">Blog</a>
           <a class="eng-nav-link" [routerLink]="['/about']">About</a>
           <a class="eng-nav-link" [routerLink]="['/contact']">Contact</a>
         </nav>
