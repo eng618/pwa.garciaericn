@@ -13,7 +13,6 @@ export class GoogleAnalyticsService {
   public emitPageView(
     url: string
   ) {
-    console.log(`Page '${url}' emited`);
     gtag('config', environment.gaTrackingId, {'page_path': url});
   }
 
