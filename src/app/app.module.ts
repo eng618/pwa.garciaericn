@@ -21,23 +21,25 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MarkdownModule } from 'ngx-markdown';
 import { environment } from '../environments/environment';
 
-// Components
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { DetailedCardComponent } from './detailed-card/detailed-card.component';
+// Components (that represent pages)
 import { AboutComponent } from './about/about.component';
-import { PageHeaderComponent } from './page-header/page-header.component';
-import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
+// Components
+import { AppComponent } from './app.component';
+import { DetailedCardComponent } from './components/detailed-card/detailed-card.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'blog', component: BlogComponent},
+  { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'portfolio', component: PortfolioComponent}
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: '**', redirectTo: '/' } // TODO: redirect to 404 Component once #19 is complete
 ];
 
 @NgModule({
