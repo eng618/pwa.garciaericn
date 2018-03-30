@@ -33,6 +33,9 @@ import { AppComponent } from './app.component';
 import { DetailedCardComponent } from './components/detailed-card/detailed-card.component';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 
+// Services
+import { GoogleAnalyticsService } from './services/google-analytics.service';
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
@@ -60,6 +63,7 @@ const routes: Routes = [
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     MatToolbarModule, MatCardModule, MatGridListModule, MatButtonModule, MatIconModule, MatSidenavModule
   ],
+  providers: [GoogleAnalyticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

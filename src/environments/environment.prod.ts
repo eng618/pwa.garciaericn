@@ -7,5 +7,6 @@ export const environment = {
     projectId: '<your-project-id>',
     storageBucket: '<your-storage-bucket>',
     messagingSenderId: '<your-messaging-sender-id>'
-  }
+  },
+  gaTrackingId: <GA_TRACKING_ID>
 };
