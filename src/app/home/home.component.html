@@ -4,12 +4,10 @@
   <div class='eng-scroll-icon'></div>
 </div>
 
-<!-- TODO: Change to highlight items / portfolio items -->
-
 <div class='eng-wrapper'>
 
   <h2>Highlights</h2>
-  <div class="eng-fxlayout" fxLayout='row' fxLayoutAlign="space-evently center" fxLayoutWrap>
+  <div class="eng-fxlayout" fxLayout='row wrap' fxLayoutAlign="space-evently center" fxLayoutWrap>
     <div class='eng-fx' fxFlex.gt-md='25' fxFlex.gt-sm='33.333' fxFlex.gt-xs='50' fxFlex.xs='100' *ngFor="let highlight of highlights | async">
 
       <eng-detailed-card [card]=highlight></eng-detailed-card>

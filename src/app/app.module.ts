@@ -57,11 +57,20 @@ const routes: Routes = [
     PortfolioComponent
   ],
   imports: [
-    RouterModule.forRoot(routes), MarkdownModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase), AngularFireDatabaseModule,
-    BrowserModule, BrowserAnimationsModule, FlexLayoutModule,
+    RouterModule.forRoot(routes),
+    MarkdownModule.forRoot(),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    MatToolbarModule, MatCardModule, MatGridListModule, MatButtonModule, MatIconModule, MatSidenavModule
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    FlexLayoutModule,
+    MatButtonModule,
+    MatCardModule,
+    MatGridListModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [GoogleAnalyticsService],
   bootstrap: [AppComponent]
