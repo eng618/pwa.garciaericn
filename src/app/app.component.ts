@@ -13,6 +13,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   title = 'Eric N. Garcia';
 
+  private _mobileQueryListener: () => void;
+
   constructor(
     public router: Router,
     private googleAnalyticsService: GoogleAnalyticsService,
