@@ -64,7 +64,7 @@ const routes: Routes = [
     MatCardModule,
     MatGridListModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
     MatSidenavModule,
     MatToolbarModule,
   ],
@@ -76,7 +76,7 @@ const routes: Routes = [
     PageHeaderComponent,
     ContactComponent,
     BlogComponent,
-    PortfolioComponent
+    PortfolioComponent,
   ],
   bootstrap: [AppComponent],
   providers: [GoogleAnalyticsService]

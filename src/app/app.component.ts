@@ -1,5 +1,5 @@
 import {MediaMatcher} from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from './services/google-analytics.service';
 
@@ -8,12 +8,17 @@ import { GoogleAnalyticsService } from './services/google-analytics.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   mobileQuery: MediaQueryList;
 
   title = 'Eric N. Garcia';
 
-  constructor(public router: Router, private googleAnalyticsService: GoogleAnalyticsService, changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(
+    public router: Router,
+    private googleAnalyticsService: GoogleAnalyticsService,
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher
+  ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
