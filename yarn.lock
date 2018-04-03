@@ -20,9 +20,9 @@
     rxjs "^5.5.6"
     source-map "^0.5.6"
 
-"@angular-devkit/core@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.4.7.tgz#c918d200d35eabe20660feb0b4f9bb145b016dba"
+"@angular-devkit/core@0.4.8":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.4.8.tgz#449718ec31de765f69f9fb7bead3a74f5b54c875"
   dependencies:
     ajv "~5.5.1"
     chokidar "^1.7.0"
@@ -6670,6 +6670,6 @@ yn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
 
-zone.js@^0.8.20:
-  version "0.8.20"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.20.tgz#a218c48db09464b19ff6fc8f0d4bb5b1046e185d"
+zone.js@^0.8.24:
+  version "0.8.24"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.24.tgz#f12a733d564dae589843d2e199fba132212203b8"
