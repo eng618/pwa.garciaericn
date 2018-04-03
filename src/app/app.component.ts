@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {MediaMatcher} from '@angular/cdk/layout';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from './services/google-analytics.service';
 
@@ -8,10 +9,15 @@ import { GoogleAnalyticsService } from './services/google-analytics.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  mobileQuery: MediaQueryList;
+
   title = 'Eric N. Garcia';
 
-  constructor(public router: Router, private googleAnalyticsService: GoogleAnalyticsService) { }
-
+  constructor(public router: Router, private googleAnalyticsService: GoogleAnalyticsService, changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    this.mobileQuery = media.matchMedia('(max-width: 600px)');
+    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
+    this.mobileQuery.addListener(this._mobileQueryListener);
+  }
 
   ngOnInit() {
     this.router.events.subscribe(event => {
@@ -19,5 +25,9 @@ export class AppComponent implements OnInit {
         this.googleAnalyticsService.emitPageView(event.urlAfterRedirects);
       }
     });
+  }
+
+  ngOnDestroy(): void {
+    this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 }
