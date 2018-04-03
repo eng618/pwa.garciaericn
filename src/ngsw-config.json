@@ -24,7 +24,8 @@
       ],
       "urls": [
         "https://fonts.googleapis.com/*",
-        "https://fonts.gstatic.com/s/materialicons/v33/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2"
+        "https://fonts.gstatic.com/s/materialicons/v33/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2",
+        "https://www.googletagmanager.com/gtag/js?id=UA-64261422-6"
       ]
     }
   }]
