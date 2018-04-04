@@ -1,10 +1,10 @@
 <div class='eng-site-header'>
   <div class='eng-slogan'>{{ title }}</div>
   <div class='eng-sub-slogan'>{{ slogan }}</div>
-  <div class='eng-scroll-icon'></div>
+  <div class='eng-scroll-icon' *ngIf="(highlights | async).length > 0"></div>
 </div>
 
-<div class='eng-wrapper'>
+<div class='eng-wrapper' *ngIf="(highlights | async).length > 0">
 
   <h2>Highlights</h2>
   <div class="eng-fxlayout" fxLayout='row wrap' fxLayoutAlign="space-evently center" fxLayoutWrap>

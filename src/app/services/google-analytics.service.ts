@@ -30,7 +30,7 @@ export class GoogleAnalyticsService {
         eventCategory,
         eventLabel,
         eventValue
-      })
+      });
     }
   }
 

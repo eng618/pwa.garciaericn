@@ -1,39 +1,38 @@
-<mat-drawer-container>
+<div class="eng-app-container" [class.eng-is-mobile]="mobileQuery.matches">
+  <!-- Toolbar -->
+  <mat-toolbar class='eng-toolbar' color='primary'>
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+      <h1 class='eng-app-name' [routerLink]="['/']">{{ title }}</h1>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="!mobileQuery.matches">
+      <span class="eng-spacer"></span>
+      <mat-nav-list>
+        <a mat-button [routerLink]="['/portfolio']">Portfolio</a>
+        <a mat-button [routerLink]="['/blog']">Blog</a>
+        <a mat-button [routerLink]="['/about']">About</a>
+        <a mat-button [routerLink]="['/contact']">Contact</a>
+      </mat-nav-list>
+    </mat-toolbar-row>
+  </mat-toolbar>
 
-  <mat-drawer #drawer class='drawer' mode='over' (keydown.escape)='drawer.close()'>
-    <!-- Drawer content -->
-    <mat-card class='drawer-card'>
-      <mat-card-title [routerLink]="['/']">Eric Garcia</mat-card-title>
-      <mat-card-actions>
-        <!-- TODO: Route buttons -->
-        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/portfolio']">Portfolio</button>
-        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/blog']">Blog</button>
-        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/about']">About</button>
-        <button mat-button color='accent' class='vertical-menu-item' (click)='drawer.close()' [routerLink]="['/contact']">Contact</button>
-      </mat-card-actions>
-    </mat-card>
-  </mat-drawer>
+  <mat-sidenav-container class="eng-sidenav-container"
+                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <!-- <h1 [routerLink]="['/']">Eric N. Garcia</h1> -->
+        <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/portfolio']">Portfolio</a>
+        <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/blog']">Blog</a>
+        <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/about']">About</a>
+        <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/contact']">Contact</a>
+      </mat-nav-list>
+    </mat-sidenav>
 
-  <mat-drawer-content>
-    <!-- Main Content -->
-    <mat-toolbar class='eng-header' color='primary'>
-      <mat-toolbar-row>
-        <button mat-button color='white' (click)='drawer.toggle()'><mat-icon>menu</mat-icon></button>
-        <h1 [routerLink]="['/']">{{ title }}</h1>
+    <mat-sidenav-content>
+      <!-- Main Content -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 
-      </mat-toolbar-row>
-      <mat-toolbar-row>
-        <span class="eng-spacer"></span>
-        <nav>
-          <a class="eng-nav-link" [routerLink]="['/portfolio']">Portfolio</a>
-          <a class="eng-nav-link" [routerLink]="['/blog']">Blog</a>
-          <a class="eng-nav-link" [routerLink]="['/about']">About</a>
-          <a class="eng-nav-link" [routerLink]="['/contact']">Contact</a>
-        </nav>
-      </mat-toolbar-row>
-    </mat-toolbar>
-
-    <router-outlet></router-outlet>
-
-  </mat-drawer-content>
-</mat-drawer-container>
+</div>
