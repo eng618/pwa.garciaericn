@@ -39,6 +39,7 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
 
 // Services
 import { GoogleAnalyticsService } from './services/google-analytics.service';
+import { HeaderComponent } from './components/header/header.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -77,6 +78,7 @@ const routes: Routes = [
     ContactComponent,
     BlogComponent,
     PortfolioComponent,
+    HeaderComponent,
   ],
   bootstrap: [AppComponent],
   providers: [GoogleAnalyticsService]
