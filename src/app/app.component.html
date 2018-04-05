@@ -2,9 +2,7 @@
 
   <eng-header [isMobile]='mobileQuery.matches' [snav]='snav'></eng-header>
 
-  <mat-sidenav-container
-    class="eng-sidenav-container"
-    [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+  <mat-sidenav-container class="eng-sidenav-container">
 
     <!-- Sidenav -->
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
