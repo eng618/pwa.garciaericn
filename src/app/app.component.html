@@ -9,7 +9,7 @@
       <span class="eng-spacer"></span>
       <mat-nav-list>
         <a mat-button [routerLink]="['/portfolio']">Portfolio</a>
-        <a mat-button [routerLink]="['/blog']">Blog</a>
+        <a mat-button [routerLink]="['/blog']" *ngIf="false">Blog</a>
         <a mat-button [routerLink]="['/about']">About</a>
         <a mat-button [routerLink]="['/contact']">Contact</a>
       </mat-nav-list>
@@ -23,7 +23,7 @@
       <mat-nav-list>
         <!-- <h1 [routerLink]="['/']">Eric N. Garcia</h1> -->
         <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/portfolio']">Portfolio</a>
-        <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/blog']">Blog</a>
+        <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/blog']" *ngIf="false">Blog</a>
         <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/about']">About</a>
         <a mat-button color='accent' class='vertical-menu-item' (click)='snav.close()' [routerLink]="['/contact']">Contact</a>
       </mat-nav-list>
