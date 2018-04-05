@@ -38,6 +38,7 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
 
 // Services
 import { GoogleAnalyticsService } from './services/google-analytics.service';
+import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 
 const routes: Routes = [
@@ -76,6 +77,7 @@ const routes: Routes = [
     ContactComponent,
     BlogComponent,
     PortfolioComponent,
+    FooterComponent,
     HeaderComponent,
   ],
   bootstrap: [AppComponent],
