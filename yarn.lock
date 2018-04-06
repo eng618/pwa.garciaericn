@@ -20,13 +20,13 @@
     rxjs "^5.5.6"
     source-map "^0.5.6"
 
-"@angular-devkit/core@0.4.8":
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.4.8.tgz#449718ec31de765f69f9fb7bead3a74f5b54c875"
+"@angular-devkit/core@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-0.5.1.tgz#6f715debcb68d1439433767820bbe775fa56167a"
   dependencies:
     ajv "~5.5.1"
     chokidar "^1.7.0"
-    rxjs "^5.5.8"
+    rxjs "^6.0.0-beta.3"
     source-map "^0.5.6"
 
 "@angular-devkit/schematics@0.3.2":
@@ -5197,6 +5197,12 @@ rxjs@^5.5.6, rxjs@^5.5.8:
   dependencies:
     symbol-observable "1.0.1"
 
+rxjs@^6.0.0-beta.3:
+  version "6.0.0-smoosh.2"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.0.0-smoosh.2.tgz#2fbec8bce211ac6cdb21e630f17df2358562b6cc"
+  dependencies:
+    tslib "^1.9.0"
+
 safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
@@ -6674,6 +6680,6 @@ yn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
 
-zone.js@^0.8.24:
-  version "0.8.24"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.24.tgz#f12a733d564dae589843d2e199fba132212203b8"
+zone.js@^0.8.25:
+  version "0.8.25"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.25.tgz#e20e5e85b881e2e66352612b5f238e8309e5badd"

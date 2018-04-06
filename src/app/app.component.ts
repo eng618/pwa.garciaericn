@@ -11,8 +11,6 @@ import { GoogleAnalyticsService } from './services/google-analytics.service';
 export class AppComponent implements OnInit, OnDestroy {
   mobileQuery: MediaQueryList;
 
-  title = 'Eric N. Garcia';
-
   private _mobileQueryListener: () => void;
 
   constructor(
