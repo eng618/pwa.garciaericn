@@ -1,6 +1,8 @@
 <div class='eng-site-header'>
-  <div class='eng-slogan'>{{ title }}</div>
-  <div class='eng-sub-slogan'>{{ slogan }}</div>
+  <div class='eng-slogan-container'>
+    <div class='eng-slogan'>{{ title }}</div>
+    <div class='eng-sub-slogan'>{{ slogan }}</div>
+  </div>
   <div class='eng-scroll-icon' *ngIf="(highlights | async).length > 0"></div>
 </div>
 

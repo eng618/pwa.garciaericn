@@ -7,14 +7,21 @@ $background-color: #f3f3f3;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100%;
+  height: 100vh;
+	display: flex;
+}
+
+.eng-slogan-container {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .eng-slogan {
   font-size: 60px;
   padding-top: 160px;
   color: $background-color;
-  text-align: center;
   text-shadow: 0 0 3px #000000;
 }
 
@@ -22,7 +29,6 @@ $background-color: #f3f3f3;
   font-size: 21px;
   padding-top: 24px;
   color: $background-color;
-  text-align: center;
   text-shadow: 0 0 3px #000000;
 }
 

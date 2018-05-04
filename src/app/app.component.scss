@@ -41,3 +41,16 @@ mat-sidenav a {
   margin: 0 auto;
   padding: 0px 50px;
 }
+
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.eng-content {
+  flex: 1 0 auto;
+}
+
+eng-footer {
+  flex-shrink: 0;
+}
