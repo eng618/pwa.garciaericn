@@ -16,8 +16,8 @@ after_success:
 
 notifications:
   email:
-    on_failure: $EMAIL
-    on_success: $EMAIL
+    on_failure: always
+    on_success: change
 
 deploy:
   # deploy develop to the staging environment
