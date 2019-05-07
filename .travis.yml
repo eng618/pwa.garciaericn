@@ -5,8 +5,8 @@ node_js:
 cache: yarn
 
 before_script:
-  - yarn add global firebase-tools
-  - yarn add global @angular/cli
+  - yarn global add firebase-tools
+  - yarn global add @angular/cli
 
 script:
   - ng build --prod
