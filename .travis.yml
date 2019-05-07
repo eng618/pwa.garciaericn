@@ -13,9 +13,20 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - ./deploy.sh
 
 notifications:
   email:
     on_failure: $EMAIL
     on_success: $EMAIL
+
+deploy:
+  # deploy develop to the staging environment
+  - provider: script
+    script: bash ./deploy.sh staging
+    on:
+      branch: develop
+  # deploy master to production
+  - provider: script
+    script: bash ./deploy.sh production
+    on:
+      branch: master
