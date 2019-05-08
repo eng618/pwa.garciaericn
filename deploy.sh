@@ -10,8 +10,9 @@ if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; th
   yarn global add firebase-tools
   yarn global add @angular/cli
   yarn
+  ng build --prod
   firebase use default
-  yarn deploy
+  firebase deploy --token $FIREBASE_TOKEN
 else
   echo "No deployment required"
 fi
