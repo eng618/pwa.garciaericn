@@ -20,6 +20,7 @@ notifications:
     on_success: change
 
 deploy:
+  skip_cleanup: true
   # deploy develop to the staging environment
   - provider: script
     script: bash ./deploy.sh staging
