@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "9.9"
+  - 'lts/*'
 
 cache: yarn
 
@@ -20,14 +20,15 @@ notifications:
     on_success: change
 
 deploy:
-  skip_cleanup: true
   # deploy develop to the staging environment
   - provider: script
+    skip_cleanup: true
     script: bash ./deploy.sh staging
     on:
       branch: develop
   # deploy master to production
   - provider: script
+    skip_cleanup: true
     script: bash ./deploy.sh production
     on:
       branch: master
