@@ -5,16 +5,29 @@ node_js:
 cache: yarn
 
 before_script:
-  - yarn add global firebase-tools
-  - yarn add global @angular/cli
+  - yarn global add firebase-tools
+  - yarn global add @angular/cli
 
 script:
   - ng build --prod
 
 after_success:
-  - ./deploy.sh
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   email:
-    on_failure: $EMAIL
-    on_success: $EMAIL
+    on_failure: always
+    on_success: change
+
+deploy:
+  skip_cleanup: true
+  # deploy develop to the staging environment
+  - provider: script
+    script: bash ./deploy.sh staging
+    on:
+      branch: develop
+  # deploy master to production
+  - provider: script
+    script: bash ./deploy.sh production
+    on:
+      branch: master
