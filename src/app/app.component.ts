@@ -21,7 +21,10 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addListener(this._mobileQueryListener);
+    // this.mobileQuery.addListener(this._mobileQueryListener);
+    this.mobileQuery.addEventListener('change', () =>
+      changeDetectorRef.detectChanges()
+    );
   }
 
   ngOnInit() {
@@ -33,6 +36,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.mobileQuery.removeListener(this._mobileQueryListener);
+    this.mobileQuery.removeEventListener('change', this._mobileQueryListener);
   }
 }

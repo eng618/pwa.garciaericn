@@ -16,8 +16,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Firebase
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 
 import { MarkdownModule } from 'ngx-markdown';
 import { environment } from '../environments/environment';
@@ -52,6 +53,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     MarkdownModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
     BrowserModule,
