@@ -19,7 +19,7 @@
     "format:diff": "prettier --check \"src/**/*.{scss,css,js,md,mdx,ts}\"",
     "e2e": "ng e2e",
     "deploy": "ng build --prod && firebase deploy",
-    "build-docs": "compodoc -p src/tsconfig.app.json -s"
+    "compodoc": "npx compodoc -p src/tsconfig.app.json -s"
   },
   "private": true,
   "dependencies": {
