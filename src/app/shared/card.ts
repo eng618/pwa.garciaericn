@@ -1,6 +1,4 @@
-
 export class Card {
-
   // Properties
   title: string;
   summary: string;
@@ -12,7 +10,5 @@ export class Card {
     summary: string = '',
     imageUrl: string = '/assets/images/mdl/example-work08.jpg',
     url: string = '#'
-  ) {
-
-  }
+  ) {}
 }

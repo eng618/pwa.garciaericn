@@ -5,33 +5,28 @@ declare var gtag: Function;
 
 @Injectable()
 export class GoogleAnalyticsService {
-
   static readonly GA_TRACKING_ID: string = environment.gaTrackingId;
 
-  constructor() { }
+  constructor() {}
 
-  public emitPageView(
-    url: string
-  ) {
-    gtag('config', environment.gaTrackingId, {'page_path': url});
+  public emitPageView(url: string) {
+    gtag('config', environment.gaTrackingId, { page_path: url });
   }
 
   public emitEvent(
     eventCategory: string,
     eventAction: string,
     eventLabel: string = null,
-    eventValue: number = null) {
-
-
+    eventValue: number = null
+  ) {
     if (!eventLabel && !eventValue) {
       gtag('event', eventAction);
     } else {
       gtag('event', eventAction, {
         eventCategory,
         eventLabel,
-        eventValue
+        eventValue,
       });
     }
   }
-
 }

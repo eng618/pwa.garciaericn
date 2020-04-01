@@ -11,7 +11,8 @@
       "files": [
         "/*.bundle.css",
         "/*.bundle.js",
-        "/*.chunk.js"
+        "/*.chunk.js",
+          "/manifest.webmanifest"
       ]
     }
   }, {

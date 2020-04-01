@@ -1,6 +1,5 @@
 import { Course } from './course';
 
-
 export const Courses: Course[] = [
   {
     _id: 1,
@@ -10,8 +9,9 @@ export const Courses: Course[] = [
     certificateNumber: 'abc123',
     completed: 'today',
     length: 'long',
-    url: '#'
-  }, {
+    url: '#',
+  },
+  {
     _id: 2,
     title: 'Android',
     category: 'Adroid',
@@ -19,8 +19,9 @@ export const Courses: Course[] = [
     certificateNumber: 'abc123',
     completed: 'today',
     length: 'long',
-    url: '#'
-  }, {
+    url: '#',
+  },
+  {
     _id: 3,
     title: 'iOS',
     category: 'iOS',
@@ -28,8 +29,9 @@ export const Courses: Course[] = [
     certificateNumber: 'abc123',
     completed: 'today',
     length: 'long',
-    url: '#'
-  }, {
+    url: '#',
+  },
+  {
     _id: 4,
     title: 'Firebase',
     category: 'Web',
@@ -37,8 +39,9 @@ export const Courses: Course[] = [
     certificateNumber: 'abc123',
     completed: 'today',
     length: 'long',
-    url: '#'
-  }, {
+    url: '#',
+  },
+  {
     _id: 5,
     title: 'Kotlin',
     category: 'Android',
@@ -46,6 +49,6 @@ export const Courses: Course[] = [
     certificateNumber: 'abc123',
     completed: 'today',
     length: 'long',
-    url: '#'
-  }
+    url: '#',
+  },
 ];

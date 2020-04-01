@@ -18,7 +18,11 @@ $eng-app-accent: mat-palette($mat-deep-purple, A200, A100, A400);
 $eng-app-warn: mat-palette($mat-amber);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$eng-app-theme: mat-light-theme($eng-app-primary, $eng-app-accent, $eng-app-warn);
+$eng-app-theme: mat-light-theme(
+  $eng-app-primary,
+  $eng-app-accent,
+  $eng-app-warn
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
