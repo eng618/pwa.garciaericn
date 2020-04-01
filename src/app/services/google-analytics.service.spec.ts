@@ -5,11 +5,14 @@ import { GoogleAnalyticsService } from './google-analytics.service';
 describe('GoogleAnalyticsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [GoogleAnalyticsService]
+      providers: [GoogleAnalyticsService],
     });
   });
 
-  it('should be created', inject([GoogleAnalyticsService], (service: GoogleAnalyticsService) => {
-    expect(service).toBeTruthy();
-  }));
+  it('should be created', inject(
+    [GoogleAnalyticsService],
+    (service: GoogleAnalyticsService) => {
+      expect(service).toBeTruthy();
+    }
+  ));
 });

@@ -45,7 +45,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'portfolio', component: PortfolioComponent },
-  { path: '**', redirectTo: '/' } // TODO: redirect to 404 Component once #19 is complete
+  { path: '**', redirectTo: '/' }, // TODO: redirect to 404 Component once #19 is complete
 ];
 
 @NgModule({
@@ -79,6 +79,6 @@ const routes: Routes = [
     HeaderComponent,
   ],
   bootstrap: [AppComponent],
-  providers: [GoogleAnalyticsService]
+  providers: [GoogleAnalyticsService],
 })
-export class AppModule { }
+export class AppModule {}

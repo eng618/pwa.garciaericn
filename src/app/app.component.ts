@@ -1,4 +1,4 @@
-import {MediaMatcher} from '@angular/cdk/layout';
+import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsService } from './services/google-analytics.service';
@@ -6,7 +6,7 @@ import { GoogleAnalyticsService } from './services/google-analytics.service';
 @Component({
   selector: 'eng-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, OnDestroy {
   mobileQuery: MediaQueryList;
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.router.events.subscribe(event => {
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.googleAnalyticsService.emitPageView(event.urlAfterRedirects);
       }

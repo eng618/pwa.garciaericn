@@ -1,6 +1,4 @@
-
 export class Course {
-
   // Properties
   _id: number;
   title: string;
@@ -11,7 +9,5 @@ export class Course {
   length: string;
   url: string;
 
-  constructor( ) {
-
-  }
+  constructor() {}
 }

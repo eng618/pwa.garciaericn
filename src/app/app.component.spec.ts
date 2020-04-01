@@ -4,10 +4,8 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-      schemas: [ NO_ERRORS_SCHEMA ]
+      declarations: [AppComponent],
+      schemas: [NO_ERRORS_SCHEMA],
     }).compileComponents();
   }));
   it('should create the app', async(() => {
@@ -24,6 +22,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Eric N. Garcia');
+    expect(compiled.querySelector('h1').textContent).toContain(
+      'Eric N. Garcia'
+    );
   }));
 });
