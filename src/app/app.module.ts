@@ -29,6 +29,7 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PrivacyComponent } from './privacy-policy/privacy.component';
 
 // Components
 import { AppComponent } from './app.component';
@@ -45,6 +46,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'portfolio', component: PortfolioComponent },
+  { path: 'privacy', component: PrivacyComponent },
   { path: '**', redirectTo: '/' }, // TODO: redirect to 404 Component once #19 is complete
 ];
 
@@ -72,6 +74,7 @@ const routes: Routes = [
     HomeComponent,
     DetailedCardComponent,
     AboutComponent,
+    PrivacyComponent,
     PageHeaderComponent,
     ContactComponent,
     BlogComponent,
