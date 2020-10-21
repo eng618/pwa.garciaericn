@@ -26,7 +26,8 @@
               "src/assets",
               "src/favicon.ico",
               "src/icons",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/.well-known/brave-rewards-verification.txt"
             ],
             "styles": [
               "src/theme.scss",
