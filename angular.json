@@ -11,6 +11,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "@angular/fire",
+              "firebase",
+              "firebase-tools"
+            ],
             "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
@@ -21,7 +26,8 @@
               "src/assets",
               "src/favicon.ico",
               "src/icons",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/.well-known/brave-rewards-verification.txt"
             ],
             "styles": [
               "src/theme.scss",

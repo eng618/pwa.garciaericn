@@ -1,12 +1,12 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: '<your-key>',
-    authDomain: '<your-project-authdomain>',
-    databaseURL: '<your-database-URL>',
-    projectId: '<your-project-id>',
-    storageBucket: '<your-storage-bucket>',
-    messagingSenderId: '<your-messaging-sender-id>'
+    apiKey: 'AIzaSyBBVsN7I9HcttOQjD1L-7EQ5OPXvFdiUfs',
+    authDomain: 'garciaericn-prod.firebaseapp.com',
+    databaseURL: 'https://garciaericn-prod.firebaseio.com',
+    projectId: 'garciaericn-prod',
+    storageBucket: 'garciaericn-prod.appspot.com',
+    messagingSenderId: '930951006456',
   },
-  gaTrackingId: '<GA_TRACKING_ID>'
+  gaTrackingId: 'UA-64261422-6',
 };
