@@ -1,5 +1,5 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { DetailedCardComponent } from './detailed-card.component';
 
@@ -7,7 +7,7 @@ describe('DetailedCardComponent', () => {
   let component: DetailedCardComponent;
   let fixture: ComponentFixture<DetailedCardComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [DetailedCardComponent],
       schemas: [NO_ERRORS_SCHEMA],
