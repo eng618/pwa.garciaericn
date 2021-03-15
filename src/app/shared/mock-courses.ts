@@ -1,6 +1,6 @@
 import { Course } from './course';
 
-export const Courses: Course[] = [
+export const COURSES: Course[] = [
   {
     _id: 1,
     title: 'Angular',

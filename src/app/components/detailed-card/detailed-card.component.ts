@@ -18,7 +18,7 @@ export class DetailedCardComponent implements OnInit {
 
   ngOnInit() {}
 
-  navigatTo(cardUrl: String) {
+  navigatTo(cardUrl: string) {
     console.log(`Navigating to ${cardUrl}`);
   }
 }
