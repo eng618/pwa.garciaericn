@@ -17,7 +17,7 @@ declare const KARMA: any;
 declare const require: any;
 
 // Prevent Karma from running prematurely.
-KARMA.loaded = () => { };
+KARMA.loaded = () => {};
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
