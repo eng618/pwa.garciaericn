@@ -1,33 +1,34 @@
 {
-  "index": "/index.html",
-  "assetGroups": [{
-    "name": "app",
-    "installMode": "prefetch",
-    "resources": {
-      "files": [
-        "/favicon.ico",
-        "/index.html"
-      ],
-      "files": [
-        "/*.bundle.css",
-        "/*.bundle.js",
-        "/*.chunk.js",
+  "assetGroups": [
+    {
+      "installMode": "prefetch",
+      "name": "app",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/*.bundle.css",
+          "/*.bundle.js",
+          "/*.chunk.js",
           "/manifest.webmanifest"
-      ]
+        ]
+      }
+    },
+    {
+      "installMode": "lazy",
+      "name": "assets",
+      "resources": {
+        "files": [
+          "/assets/**"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/*",
+          "https://fonts.gstatic.com/s/materialicons/v33/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2",
+          "https://www.googletagmanager.com/gtag/js?id=UA-64261422-6"
+        ]
+      },
+      "updateMode": "prefetch"
     }
-  }, {
-    "name": "assets",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
-      ],
-      "urls": [
-        "https://fonts.googleapis.com/*",
-        "https://fonts.gstatic.com/s/materialicons/v33/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2",
-        "https://www.googletagmanager.com/gtag/js?id=UA-64261422-6"
-      ]
-    }
-  }]
+  ],
+  "index": "/index.html"
 }
