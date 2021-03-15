@@ -6,22 +6,22 @@
   display: block;
   max-width: 260px;
   overflow-wrap: break-word;
-  padding-top: 4px;
   padding-bottom: 4px;
-  text-decoration: none;
+  padding-top: 4px;
   text-align: left;
+  text-decoration: none;
   width: 93%;
   word-wrap: break-word;
 }
 
 .eng-app-container {
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
   left: 0;
+  position: absolute;
   right: 0;
+  top: 0;
 }
 
 .eng-is-mobile .eng-toolbar {
@@ -39,5 +39,5 @@
 
 mat-sidenav a {
   margin: 0 auto;
-  padding: 0px 50px;
+  padding: 0 50px;
 }

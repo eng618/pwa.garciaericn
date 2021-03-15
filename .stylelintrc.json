@@ -1,0 +1,6 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "function-parentheses-space-inside": "never-single-line"
+  }
+}
