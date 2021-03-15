@@ -1748,6 +1748,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@eng618/prettier-config@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@eng618/prettier-config/-/prettier-config-1.5.0.tgz#3ccd3d51d6c740190438979f3bb59b7990345071"
+  integrity sha512-mniPOb5jgYPhPBtJOe3q7Img36ScdRiLAeeyUXuz7xIbK9+zazy1knIQCNT/SJjhfvoSGfol5oNOZnkI4/j3tg==
+
 "@firebase/analytics-types@0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@firebase/analytics-types/-/analytics-types-0.4.0.tgz#d6716f9fa36a6e340bc0ecfe68af325aa6f60508"
