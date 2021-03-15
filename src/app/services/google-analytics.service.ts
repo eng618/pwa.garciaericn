@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 
-declare var gtag: Function;
+declare let gtag: any;
 
 @Injectable()
 export class GoogleAnalyticsService {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   static readonly GA_TRACKING_ID: string = environment.gaTrackingId;
 
   constructor() {}
 
   public emitPageView(url: string) {
-    gtag('config', environment.gaTrackingId, { page_path: url });
+    gtag('config', environment.gaTrackingId, { pagePath: url });
   }
 
   public emitEvent(
