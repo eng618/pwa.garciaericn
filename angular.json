@@ -16,7 +16,6 @@
               "firebase",
               "firebase-tools"
             ],
-            "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -43,7 +42,13 @@
               "node_modules/prismjs/components/prism-json.min.js",
               "node_modules/prismjs/components/prism-jsx.min.js",
               "node_modules/prismjs/components/prism-css.min.js"
-            ]
+            ],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -57,7 +62,6 @@
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
