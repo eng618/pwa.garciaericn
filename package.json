@@ -17,8 +17,8 @@
     "lint": "ng lint",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
-    "format": "prettier --write \"src/**/*.{scss,css,js,md,mdx,ts}\"",
-    "format:diff": "prettier --check \"src/**/*.{scss,css,js,md,mdx,ts}\"",
+    "format": "prettier --check \"src/**/*.{scss,css,js,md,mdx,ts}\"",
+    "format:fix": "prettier --write \"src/**/*.{scss,css,js,md,mdx,ts}\"",
     "e2e": "ng e2e",
     "deploy": "ng build --prod && firebase deploy",
     "compodoc": "npx compodoc -p src/tsconfig.app.json -d docs -s"
