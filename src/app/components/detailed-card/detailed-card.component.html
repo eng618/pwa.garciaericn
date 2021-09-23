@@ -1,12 +1,12 @@
 <mat-card *ngIf="card" class="eng-card">
-  <img mat-card-image *ngIf="card.imageUrl != ''" class="article-image" src="{{ card.imageUrl }}" border="0" alt="article image" />
-  <mat-card-title *ngIf="card.title != ''">{{ card.title }}</mat-card-title>
+  <img mat-card-image *ngIf="card.imageUrl !== ''" class="article-image" src="{{ card.imageUrl }}" border="0" alt="article image" />
+  <mat-card-title *ngIf="card.title !== ''">{{ card.title }}</mat-card-title>
 
-  <mat-card-content *ngIf="card.summary != ''">
+  <mat-card-content *ngIf="card.summary !== ''">
     {{ card.summary }}
   </mat-card-content>
 
-  <mat-card-actions *ngIf="card.url != ''">
+  <mat-card-actions *ngIf="card.url !== ''">
     <button mat-button color='accent' (click)='navigatTo(card.url)'>Read more <mat-icon>chevron_right</mat-icon></button>
   </mat-card-actions>
 </mat-card>
