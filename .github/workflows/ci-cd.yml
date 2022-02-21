@@ -42,6 +42,9 @@ jobs:
       - name: Test
         run: yarn test:ci
 
+      - name: Build production
+        run: yarn build:prod
+
       # - name: Build & deploy staging
       #   if: ${{github.github.ref_name}} == 'develop'
       #   run: |
@@ -55,7 +58,6 @@ jobs:
         if: ${{ github.ref_name }} == "master"
         shell: bash
         run: |
-          yarn build:prod && \
-          echo "Current branch is ${{ github.ref_name }}" && \
-          yarn firebase use default && \
-          yarn firebase deploy --token ${{ secrets.FIREBASE_TOKEN }} && \
+          echo "Current branch is ${{ github.ref_name }}"
+          yarn firebase use default
+          yarn firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
