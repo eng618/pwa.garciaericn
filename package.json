@@ -14,7 +14,7 @@
     "build": "ng build --configuration production",
     "postinstall": "ngcc",
     "test": "ng test --watch",
-    "test-ci": "ng test --no-progress",
+    "test-ci": "ng test --browsers=ChromeHeadless --watch=false",
     "lint": "ng lint",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
