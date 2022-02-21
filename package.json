@@ -20,7 +20,7 @@
     "format": "prettier --check \"src/**/*.{scss,css,js,md,mdx,ts}\"",
     "format:fix": "prettier --write \"src/**/*.{scss,css,js,md,mdx,ts}\"",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && firebase deploy",
+    "deploy": "ng build --configuration production && firebase deploy",
     "compodoc": "npx compodoc -p src/tsconfig.app.json -d docs -s"
   },
   "private": true,
