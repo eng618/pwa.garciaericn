@@ -10,22 +10,17 @@ on:
     branches: [master, develop]
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '14'
           cache: 'yarn'
 
       - name: Get yarn cache directory path
@@ -47,13 +42,20 @@ jobs:
       - name: Test
         run: yarn test:ci
 
-      - name: Build
-        run: yarn build:prod
+      # - name: Build & deploy staging
+      #   if: ${{github.github.ref_name}} == 'develop'
+      #   run: |
+      #     yarn build
+      #     echo "Current branch is ${{ github.github.ref_name }}"
+      #     yarn firebase use default
+      #     yarn firebase deploy --token ${{ secrets.FIREBASE_TOKEN }} staging
+      #     ./deploy.sh staging
 
-      - name: Deploy staging
-        if: github.ref == 'refs/heads/develop'
-        run: ./deploy.sh staging
-
-      - name: Deploy production
-        if: github.ref == 'refs/heads/master'
-        run: ./deploy.sh production
+      - name: Build & deploy production
+        if: ${{ github.ref_name }} == "master"
+        shell: bash
+        run: |
+          yarn build:prod && \
+          echo "Current branch is ${{ github.ref_name }}" && \
+          yarn firebase use default && \
+          yarn firebase deploy --token ${{ secrets.FIREBASE_TOKEN }} && \
