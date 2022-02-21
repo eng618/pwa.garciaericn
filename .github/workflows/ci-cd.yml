@@ -55,8 +55,7 @@ jobs:
       #     ./deploy.sh staging
 
       - name: Build & deploy production
-        if: ${{ github.ref_name }} == "master"
-        shell: bash
+        if: ${{ github.ref_name  == master }}
         run: |
           echo "Current branch is ${{ github.ref_name }}"
           yarn firebase use default
