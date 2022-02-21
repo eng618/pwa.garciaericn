@@ -7,6 +7,8 @@ export const environment = {
     projectId: 'garciaericn-prod',
     storageBucket: 'garciaericn-prod.appspot.com',
     messagingSenderId: '930951006456',
+    appId: '1:930951006456:web:231d8e0c3593cbb3',
+    measurementId: 'G-R4H1DRBZDM',
   },
   gaTrackingId: 'UA-64261422-6',
 };
