@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Master is the only supported
+Master is the only supported version.
 
 ## Reporting a Vulnerability
 

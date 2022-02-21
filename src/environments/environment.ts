@@ -12,6 +12,7 @@ export const environment = {
     projectId: 'garciaericn-dev',
     storageBucket: 'garciaericn-dev.appspot.com',
     messagingSenderId: '214071154092',
+    appId: '1:214071154092:web:cc64738832310d86bc5609',
   },
   gaTrackingId: 'UA-64261422-6',
 };

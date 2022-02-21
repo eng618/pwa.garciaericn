@@ -1,26 +1,43 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "defaultProject": "garciaericn",
   "newProjectRoot": "projects",
   "projects": {
     "garciaericn": {
-      "root": "",
-      "sourceRoot": "src",
-      "projectType": "application",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "maximumWarning": "6kb",
+                  "type": "anyComponentStyle"
+                }
+              ],
+              "buildOptimizer": true,
+              "extractLicenses": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "namedChunks": false,
+              "ngswConfigPath": "src/ngsw-config.json",
+              "optimization": true,
+              "outputHashing": "all",
+              "serviceWorker": true,
+              "sourceMap": false,
+              "vendorChunk": false
+            }
+          },
           "options": {
             "allowedCommonJsDependencies": [
               "@angular/fire",
               "firebase",
               "firebase-tools"
             ],
-            "outputPath": "dist",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
               "src/favicon.ico",
@@ -28,13 +45,16 @@
               "src/manifest.json",
               "src/.well-known/brave-rewards-verification.txt"
             ],
-            "styles": [
-              "src/theme.scss",
-              "src/styles.scss",
-              "node_modules/prismjs/themes/prism-okaidia.css"
-            ],
+            "buildOptimizer": false,
+            "extractLicenses": false,
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "namedChunks": true,
+            "optimization": false,
+            "outputPath": "dist",
+            "polyfills": "src/polyfills.ts",
             "scripts": [
-              "node_modules/marked/lib/marked.js",
+              "node_modules/marked/marked.min.js",
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/components/prism-bash.min.js",
               "node_modules/prismjs/components/prism-git.min.js",
@@ -43,48 +63,14 @@
               "node_modules/prismjs/components/prism-jsx.min.js",
               "node_modules/prismjs/components/prism-css.min.js"
             ],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
             "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "serviceWorker": true,
-              "ngswConfigPath": "src/ngsw-config.json",
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "garciaericn:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "garciaericn:build:production"
-            }
+            "styles": [
+              "src/theme.scss",
+              "src/styles.scss",
+              "node_modules/prismjs/themes/prism-okaidia.css"
+            ],
+            "tsConfig": "src/tsconfig.app.json",
+            "vendorChunk": true
           }
         },
         "extract-i18n": {
@@ -93,15 +79,36 @@
             "browserTarget": "garciaericn:build"
           }
         },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "garciaericn:build:production"
+            }
+          },
+          "options": {
+            "browserTarget": "garciaericn:build"
+          }
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
+            "assets": [
+              "src/assets",
+              "src/favicon.ico",
+              "src/icons",
+              "src/manifest.json"
+            ],
             "karmaConfig": "./karma.conf.js",
+            "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
-              "node_modules/marked/lib/marked.js",
               "node_modules/prismjs/prism.js",
               "node_modules/prismjs/components/prism-bash.min.js",
               "node_modules/prismjs/components/prism-git.min.js",
@@ -115,50 +122,35 @@
               "src/styles.scss",
               "node_modules/prismjs/themes/prism-okaidia.css"
             ],
-            "assets": [
-              "src/assets",
-              "src/favicon.ico",
-              "src/icons",
-              "src/manifest.json"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-eslint/builder:lint",
-          "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "tsConfig": "src/tsconfig.spec.json"
           }
         }
-      }
+      },
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src"
     },
     "garciaericn-e2e": {
-      "root": "",
-      "sourceRoot": "",
-      "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "garciaericn:serve"
+            "devServerTarget": "garciaericn:serve",
+            "protractorConfig": "./protractor.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         }
-      }
+      },
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": ""
     }
   },
-  "defaultProject": "garciaericn",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "eng",
@@ -167,5 +159,6 @@
     "@schematics/angular:directive": {
       "prefix": "eng"
     }
-  }
+  },
+  "version": 1
 }

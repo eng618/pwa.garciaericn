@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 
-import { AppComponent } from '../app.component';
 import { Observable } from 'rxjs';
-
-import { Card } from '../shared/card';
 
 @Component({
   selector: 'eng-home',
