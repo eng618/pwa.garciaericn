@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "defaultProject": "garciaericn",
   "newProjectRoot": "projects",
   "projects": {
     "garciaericn": {
@@ -160,5 +159,8 @@
       "prefix": "eng"
     }
   },
-  "version": 1
+  "version": 1,
+  "cli": {
+    "analytics": "670ff1dd-53ef-4606-a968-b184e3cfa7d9"
+  }
 }
