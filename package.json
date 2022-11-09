@@ -61,7 +61,7 @@
     "@angular-eslint/eslint-plugin-template": "^13.1.0",
     "@angular-eslint/schematics": "13.1.0",
     "@angular-eslint/template-parser": "^13.1.0",
-    "@angular/cli": "^13.2.4",
+    "@angular/cli": "^14.2.9",
     "@angular/compiler-cli": "13.2.3",
     "@angular/language-service": "13.2.3",
     "@eng618/prettier-config": "^1.6.1",
