@@ -317,20 +317,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/cdk@npm:^13.2.3":
-  version: 13.2.3
-  resolution: "@angular/cdk@npm:13.2.3"
+"@angular/cdk@npm:^14.2.6":
+  version: 14.2.6
+  resolution: "@angular/cdk@npm:14.2.6"
   dependencies:
     parse5: ^5.0.0
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/common": ^13.0.0 || ^14.0.0-0
-    "@angular/core": ^13.0.0 || ^14.0.0-0
+    "@angular/common": ^14.0.0 || ^15.0.0
+    "@angular/core": ^14.0.0 || ^15.0.0
     rxjs: ^6.5.3 || ^7.4.0
   dependenciesMeta:
     parse5:
       optional: true
-  checksum: d020eafb729014389f5021e798e521e0a794f6248ddb0995b0ed01b4245230a0e5005d3dc65c7db159cab4303baacb39609a149541b66f8e403e12343c13ee84
+  checksum: 9d2a850e4c239973c7fbaece21bfc6660ebc2d44af158a9ec1273ae2da8540987b133d40d272ed443e5e8ba42542abac362b827c79bb52e228a5136c55ca0436
   languageName: node
   linkType: hard
 
@@ -536,20 +536,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/material@npm:^13.2.3":
-  version: 13.2.3
-  resolution: "@angular/material@npm:13.2.3"
+"@angular/material@npm:^14.2.6":
+  version: 14.2.6
+  resolution: "@angular/material@npm:14.2.6"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/animations": ^13.0.0 || ^14.0.0-0
-    "@angular/cdk": 13.2.3
-    "@angular/common": ^13.0.0 || ^14.0.0-0
-    "@angular/core": ^13.0.0 || ^14.0.0-0
-    "@angular/forms": ^13.0.0 || ^14.0.0-0
-    "@angular/platform-browser": ^13.0.0 || ^14.0.0-0
+    "@angular/animations": ^14.0.0 || ^15.0.0
+    "@angular/cdk": 14.2.6
+    "@angular/common": ^14.0.0 || ^15.0.0
+    "@angular/core": ^14.0.0 || ^15.0.0
+    "@angular/forms": ^14.0.0 || ^15.0.0
+    "@angular/platform-browser": ^14.0.0 || ^15.0.0
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: f372205b3ae093d6e2aeb98e176d701b2698fd7fc170f2ec93b89734e9281f159abde2d5330a6727900f510d7cad0684be2a0384882b345558aed25de7140bfd
+  checksum: 5638a6b505ee35374256ae817e6787250d1d23c171e168bc49660db50fda223a8f773756bf0e200b6bfcaf1816cc73495e26691cd4e2d1effa21fa14b268ad81
   languageName: node
   linkType: hard
 
@@ -8619,7 +8619,7 @@ __metadata:
     "@angular-eslint/schematics": 13.1.0
     "@angular-eslint/template-parser": ^13.1.0
     "@angular/animations": 14.2.9
-    "@angular/cdk": ^13.2.3
+    "@angular/cdk": ^14.2.6
     "@angular/cli": ^14.2.9
     "@angular/common": 14.2.9
     "@angular/compiler": 14.2.9
@@ -8630,7 +8630,7 @@ __metadata:
     "@angular/forms": 14.2.9
     "@angular/language-service": 14.2.9
     "@angular/localize": ^14.2.9
-    "@angular/material": ^13.2.3
+    "@angular/material": ^14.2.6
     "@angular/platform-browser": 14.2.9
     "@angular/platform-browser-dynamic": 14.2.9
     "@angular/router": 14.2.9
