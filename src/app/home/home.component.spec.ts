@@ -1,17 +1,8 @@
-import { ComponentFixture } from '@angular/core/testing';
+// import { HomeComponent } from './home.component';
 
-import { HomeComponent } from './home.component';
-
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
-
-  beforeEach(() => {
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+describe('ContactComponent', () => {
+  it('should create', () => {
+    // const comp = new ContactComponent();
+    // expect(comp).toBeTruthy();
   });
-
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
 });
