@@ -501,18 +501,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/flex-layout@npm:^14.0.0-beta.41":
-  version: 14.0.0-beta.41
-  resolution: "@angular/flex-layout@npm:14.0.0-beta.41"
+"@angular/flex-layout@npm:^15.0.0-beta.42":
+  version: 15.0.0-beta.42
+  resolution: "@angular/flex-layout@npm:15.0.0-beta.42"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/cdk": ^14.0.0
-    "@angular/common": ^14.0.0
-    "@angular/core": ^14.0.0
-    "@angular/platform-browser": ^14.0.0
+    "@angular/cdk": ">=15.0.0"
+    "@angular/common": ">=15.0.2"
+    "@angular/core": ">=15.0.2"
+    "@angular/platform-browser": ">=15.0.2"
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 6fc9715eec897fa5e2a21fb36ace4c0a6c2159499dd4f2bd03c0d17c2010c4ef604b84eb2842c77106ae727316e193f25112959b8cf6271650e3c1e8610c094f
+  checksum: e8aa73a442f44f8f48028bc1d5e04ddae147ff5f627678ed76faf1ba8a6303ceeea51ec7aa45fc37e38ff26d62af67b08d3ff2de04972688fed7c585b86b57f0
   languageName: node
   linkType: hard
 
@@ -10267,7 +10267,7 @@ __metadata:
     "@angular/compiler-cli": 15.2.9
     "@angular/core": 15.2.9
     "@angular/fire": ^7.6.1
-    "@angular/flex-layout": ^14.0.0-beta.41
+    "@angular/flex-layout": ^15.0.0-beta.42
     "@angular/forms": 15.2.9
     "@angular/language-service": 15.2.9
     "@angular/localize": ^15.2.9
