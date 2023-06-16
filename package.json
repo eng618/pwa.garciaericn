@@ -99,5 +99,5 @@
     "typescript": "~4.8.4"
   },
   "prettier": "@eng618/prettier-config",
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.6.0"
 }
