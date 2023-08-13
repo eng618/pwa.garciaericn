@@ -4,6 +4,12 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 version: 2
 updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    reviewers:
+      - "eng618"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
