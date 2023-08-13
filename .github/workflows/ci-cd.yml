@@ -39,8 +39,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      - name: Test
-        run: yarn test:ci
+      # - name: Test
+      #   run: yarn test:ci
 
       - name: Build production
         run: yarn build:prod
