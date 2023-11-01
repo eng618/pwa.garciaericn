@@ -43,7 +43,7 @@
     "@angular/router": "16.2.0",
     "@angular/service-worker": "16.2.0",
     "@ibm/type": "^0.5.4",
-    "core-js": "^3.32.0",
+    "core-js": "^3.33.2",
     "firebase": "^9.23.0",
     "jasmine": "^5.1.0",
     "ngx-markdown": "^16.0.0",
