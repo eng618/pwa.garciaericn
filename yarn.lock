@@ -316,14 +316,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/animations@npm:16.2.0":
-  version: 16.2.0
-  resolution: "@angular/animations@npm:16.2.0"
+"@angular/animations@npm:17.0.8":
+  version: 17.0.8
+  resolution: "@angular/animations@npm:17.0.8"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/core": 16.2.0
-  checksum: 405df64689cbfd0fa644536067a62189d1485d772aea2b61e7d11052aac91b5b6709491706b5fa230944883ecdfc01748ce749127b2eb251ce5d9bc417c88695
+    "@angular/core": 17.0.8
+  checksum: 199b01ef58af06068aaa15f468796c3242a2aefabf618a3be29b2bc23c74688f6ff6d80154ca25b6a1b1b52f630b263dd4d224a82f043157062011f7bdb37e2c
   languageName: node
   linkType: hard
 
@@ -11866,7 +11866,7 @@ __metadata:
     "@angular-eslint/eslint-plugin-template": ^16.1.0
     "@angular-eslint/schematics": 16.1.0
     "@angular-eslint/template-parser": ^16.1.0
-    "@angular/animations": 16.2.0
+    "@angular/animations": 17.0.8
     "@angular/cdk": ^16.2.0
     "@angular/cli": ^16.2.0
     "@angular/common": 16.2.0
