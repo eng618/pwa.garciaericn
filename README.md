@@ -1,8 +1,10 @@
 # Garciaericn
 
-[![Build Status](https://travis-ci.com/ENG618/pwa.garciaericn.svg?branch=master)](https://travis-ci.com/ENG618/pwa.garciaericn)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4971d8e7-62ef-41f3-b7cf-b1241fa1fee3/deploy-status)](https://app.netlify.com/sites/garciaericn/deploys)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+> [!CAUTION]
+> **This project is decommissioned.**
+> It is no longer being maintained, and the deployment has been removed. This repository is archived for historical reference.
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 

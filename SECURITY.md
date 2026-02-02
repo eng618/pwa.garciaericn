@@ -2,8 +2,8 @@
 
 ## Supported Versions
 
-Master is the only supported version.
+This project is **no longer supported**. No versions are receiving security updates.
 
 ## Reporting a Vulnerability
 
-Report any found security vulnerabilities to [security@garciaericn.com](mailto:security@garciaericn.com)
+As this project is decommissioned and archived, we are no longer accepting security vulnerability reports.
